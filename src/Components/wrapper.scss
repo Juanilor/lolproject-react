@@ -1,0 +1,41 @@
+
+.wrapper{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper-top-bar{
+    background-color: blue;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.wrapper-menu{
+    --width: 300px;
+    background-color: green;
+    width: var(--width);
+    flex-shrink: 0;
+    transition: margin-left 350ms ease-in;
+    &.wrapper-menu-closed{
+        background-color: cyan;
+        margin-left:calc(var(--width) * -1);
+    }
+}
+
+.wrapper-content{
+    background-color: yellow;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-children{
+    background-color: gray;
+    height: 100%;
+    overflow-y: auto;
+}
