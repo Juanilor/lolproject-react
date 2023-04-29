@@ -1,6 +1,5 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import MenuWrapper from '../../Components/MenuWrapper';
 
 const HomePage = () => {
   const navigate = useNavigate(); 
